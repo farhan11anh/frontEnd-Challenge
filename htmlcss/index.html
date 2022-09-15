@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: rgb(229, 229, 229);
+            font-family: poppins;
+        }
+
+        .contain-wrap {
+            padding: 20px;
+
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+        .box {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10PX;
+            flex: 20%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        /* responsive */
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+
+        .card-deck .card {
+            height: fit-content;
+        }
+
+        .title {
+            font-size:x-large;
+            display: block;
+            background-color: #fff;
+        }
+
+        .wrap-profile {
+            display: inline;
+        }
+        .profile {
+            border-radius: 100%;
+            width: 50px; height: 50px;
+            margin: 20px; margin-right: 10px !important;
+            display: inline;
+            background-color: #fff;
+        }
+        .text-profile{
+            display: block;
+            font-size:smaller;
+            background-color: #fff;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .card-body {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 10  px rgb(9, 9, 9);
+        }
+        .text-muted {
+            background-color: #fff;
+        }
+        .card-text {
+            background-color: #fff;
+        }
+        .footer {
+            background-color: #fff;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="contain-wrap">
+        <div class="card-deck">
+            <div class="card">
+              <img src="assets/img/winter.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="title">Top Winter Locations</span>
+                <small class="text-muted">More than 200 Locations</small>
+                <p class="card-text mt-4">Cards provide context and an entry point to more robust information and views, and their content and quantity can very greaty.</p>
+    
+                <div class="footer" >
+                    <a class="mr-4" href="">SHARE</a>
+                    <a data-toggle="modal" data-target="#winter" href="#">EXPLORE</a>
+                    <i class="float-right" data-feather="chevron-down"></i>
+                </div>
+              </div>
+    
+            </div>
+            <div class="card">
+              <img src="assets/img/eastern.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="title">Top eastern road trip</span>
+    
+                <small class="text-muted">200 miles of wonder</small>
+    
+                <div class="mt-4 footer" >
+                    <a class="mr-4" href="">SHARE</a>
+                    <a data-toggle="modal" data-target="#eastern" href="#">EXPLORE</a>
+                    <i class="float-right" data-feather="chevron-down"></i>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                    <div class="">
+                            <div class="">
+                                <img class="profile" style="background-color: #fff; float: left;" src="assets/img/profile.png" alt="">
+
+                                <span class="text-profile" style="float: left; margin-top: 23px;">
+                                    <span class="" style="font-weight:700 ; background-color: #fff;" >Chrizty</span> <br>
+                                    <span class="text-muted" >20 min ago</span>
+                                </span>   
+                            </div>
+                            
+  
+        
+                    </div>
+    
+              <img src="assets/img/kangaroo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <span class="title">Kangaroo Valley Safari</span>
+                <p class="card-text">Cards provide context and an entry point to more robust information and views, and their content and quantity can very greaty.</p>
+              </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/eastern.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <i class="float-right mr-2" data-feather="map-pin"></i>
+                    <i class="float-right mr-2" fill="black" data-feather="bookmark"></i>
+                    <i class="float-right mr-2" fill="black" data-feather="heart"></i>
+                    
+                </div>
+              </div>
+          </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="winter" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Top Winter Locations</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/winter.jpg" class="card-img-top" alt="...">
+                <small class="text-muted">More than 200 Locations</small>
+                <p class="card-text mt-4">Cards provide context and an entry point to more robust information and views, and their content and quantity can very greaty.</p>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eastern" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Top eastern road trip</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/eastern.jpg" class="card-img-top" alt="...">
+                <small class="text-muted">200 miles of wonder</small>
+                <p class="card-text mt-4">Cards provide context and an entry point to more robust information and views, and their content and quantity can very greaty.</p>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/bootstrap.bundle.js" ></script>
+    <script src="assets/js/bootstrap.bundle.js.map"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        feather.replace()
+    </script>
+
+</body>
+</html>
